@@ -1,5 +1,4 @@
-public enum CoinEnum
-{
+public enum CoinEnum {
     ILS,
     USD
 }

@@ -46,8 +46,8 @@ public class main {
                 }
                 try {
                     FileWriter myWriter = new FileWriter("Results.txt");
-                    for (int i = 0; i < myList.size(); i++){
-                        myWriter.write(myList.get(i)+ "\n");
+                    for (int i = 0; i < myList.size(); i++) {
+                        myWriter.write(myList.get(i) + "\n");
                     }
                     myWriter.close();
                 } catch (IOException e) {

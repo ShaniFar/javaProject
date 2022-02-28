@@ -1,4 +1,3 @@
-public interface ICalcualte
-{
+public interface ICalcualte {
     double calculate(double value);
 }
