@@ -8,8 +8,8 @@ public class CoinFactory
                 return new ILS();
             case USD:
                 return new USD();
-
+            default:
+                return null;
         }
-        return null;
     }
 }
