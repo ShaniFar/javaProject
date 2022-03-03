@@ -1,10 +1,12 @@
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner myObj = new Scanner(System.in);
         ArrayList<Double> myList = new ArrayList<>();
         boolean flag = true;
@@ -77,18 +79,17 @@ public class Main {
                 }
 
 
-                try {
-                    FileWriter myWriter = new FileWriter("Results.txt");
-                    for (int i = 0; i < myList.size(); i++) {
-                        myWriter.write(myList.get(i) + "\n");
-                    }
-                    myWriter.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                Date date = new Date();
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+                FileWriter myWriter = new FileWriter(dateFormat.format(date) + ".txt");
+                for (int i = 0; i < myList.size(); i++) {
+                    myWriter.write(myList.get(i) + "\n");
                 }
+                myWriter.close();
+
             }
-            else System.out.println("You can enter only Y or T");
-            flag = true;
+            //else System.out.println("You can enter only Y or T");
+          //  flag = true;
 
         }
     }
