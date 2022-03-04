@@ -79,17 +79,19 @@ public class Main {
                 }
 
 
-                Date date = new Date();
-                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
-                FileWriter myWriter = new FileWriter(dateFormat.format(date) + ".txt");
-                for (int i = 0; i < myList.size(); i++) {
-                    myWriter.write(myList.get(i) + "\n");
-                }
-                myWriter.close();
+                    Date date = new Date() ;
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss") ;
+                FileWriter myWriter = new FileWriter(dateFormat.format(date) + ".txt") ;
+                    for (int i = 0; i < myList.size(); i++) {
+                        myWriter.write(myList.get(i) + "\n");
+                    }
+                    myWriter.close();
 
             }
+
             //else System.out.println("You can enter only Y or T");
-          //  flag = true;
+            //flag = true;
+
 
         }
     }
