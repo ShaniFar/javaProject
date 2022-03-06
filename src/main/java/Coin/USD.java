@@ -1,3 +1,5 @@
+package Coin;
+
 import java.io.Serializable;
 
 public class USD extends Coin implements Serializable {

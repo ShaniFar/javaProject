@@ -1,3 +1,5 @@
+package Coin;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -22,8 +24,8 @@ public class Main {
         while (flag) {
             do {
                 System.out.println("Please choose an option (1/2):");
-                System.out.println("1. Dollars to Shekels - USD TO ILS"); //USD TO ILS
-                System.out.println("2. Shekels to Dollars - ILS TO USD"); //ILS TO USD
+                System.out.println("1. Dollars to Shekels - Coin.Coin.USD TO Coin.ILS"); //Coin.Coin.USD TO Coin.ILS
+                System.out.println("2. Shekels to Dollars - Coin.ILS TO Coin.Coin.USD"); //Coin.ILS TO Coin.Coin.USD
                 input = myObj.next();
                 try {
                     type = Integer.parseInt(input);

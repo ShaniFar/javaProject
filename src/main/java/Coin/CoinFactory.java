@@ -1,3 +1,7 @@
+package Coin;
+
+import Coin.Coin;
+
 public class CoinFactory {
     public static Coin getCoinInstance(CoinEnum coin) {
         switch (coin) {

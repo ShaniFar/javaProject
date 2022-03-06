@@ -1,3 +1,7 @@
+package Coin;
+
+import Coin.Coin;
+
 import java.io.Serializable;
 
 public class ILS extends Coin implements Serializable {
