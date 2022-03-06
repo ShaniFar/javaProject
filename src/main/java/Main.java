@@ -64,27 +64,22 @@ public class Main {
                 }
             }
 
-           /* while (ansFlag) {
+
+            while (ansFlag == true) {
                 System.out.println("Would you like to continue converting more values?\nwrite Y or N");
                 ans = myObj.next();
-                if (ans != "Y" || ans != "N") {
-                    System.err.println("enter only Y or N");
-                    ansFlag =false;
-                } else {*/
-            System.out.println("Would you like to continue converting more values?\nwrite Y or N");
-            ans = myObj.next();
-                    if (ans.equalsIgnoreCase("Y")) {
-                        flag = true;
-                    } else if (ans.equalsIgnoreCase("N")) {
-                        flag = false;
-                        System.out.println("Thanks for using our currency converter");
-                        for (int i = 0; i < myList.size(); i++) {
-                            System.out.println(myList.get(i));
+                if (ans.equalsIgnoreCase("Y")) {
+                    flag = true;
+                    break;
+                } else if (ans.equalsIgnoreCase("N")) {
+                    flag = false;
+                    ansFlag = false;
+                    System.out.println("Thanks for using our currency converter");
 
-                        }
+                    for (int i = 0; i < myList.size(); i++) {
+                        System.out.println(myList.get(i));
+
                     }
-
-
                     Date date = new Date();
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
                     FileWriter myWriter = new FileWriter(dateFormat.format(date) + ".txt");
@@ -95,12 +90,16 @@ public class Main {
 
                 }
 
-                //else System.out.println("You can enter only Y or T");
-                //flag = true;
-
-
+                else{
+                System.out.println("You can enter only Y or T");
+                flag = true;
             }
         }
+        }
+    }
+
+}
+
 
 
 
