@@ -25,6 +25,7 @@ public class Main {
         //The program will run as long as the user wants to continue
         while (flag) {
             do {
+
                 System.out.println("Please choose an option (1/2):");
                 System.out.println("1. Dollars to Shekels - Coin.Coin.USD TO Coin.ILS"); //Coin.Coin.USD TO Coin.ILS
                 System.out.println("2. Shekels to Dollars - Coin.ILS TO Coin.Coin.USD"); //Coin.ILS TO Coin.Coin.USD
