@@ -1,4 +1,5 @@
 package Coin;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -89,7 +90,7 @@ public class Main {
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
                     FileWriter myWriter = new FileWriter(dateFormat.format(date) + ".txt");
                     for (int i = 0; i < myList.size(); i++) {//Print the array into the created file
-                        myWriter.write("The results\n" + myList.get(i) + "\n");
+                        myWriter.write(+myList.get(i) + "\n");
                     }
                     myWriter.close();
 
