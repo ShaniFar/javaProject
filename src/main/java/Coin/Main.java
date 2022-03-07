@@ -95,7 +95,7 @@ public class Main {
                     myWriter.close();
 
                 } else {//In case the user entered a value other than Y or N
-                    System.out.println("You can enter only Y or T");
+                    System.err.println("You can enter only Y or T");
                     flag = true;
                 }
             }
