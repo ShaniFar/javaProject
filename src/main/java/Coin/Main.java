@@ -39,7 +39,6 @@ public class Main {
                 }
 
             } while (type != 1 && type != 2);
-
             do {
                 System.out.println("Please enter an amount to convert");
                 input = myObj.next();
@@ -90,15 +89,18 @@ public class Main {
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
                     FileWriter myWriter = new FileWriter(dateFormat.format(date) + ".txt");
                     for (int i = 0; i < myList.size(); i++) {//Print the array into the created file
-                        myWriter.write(+myList.get(i) + "\n");
+                        myWriter.write(myList.get(i) + "\n");
                     }
                     myWriter.close();
 
                 } else {//In case the user entered a value other than Y or N
-                    System.err.println("You can enter only Y or T");
+                    System.out.println("You can enter only Y or T");
                     flag = true;
                 }
             }
         }
     }
+
 }
+
+
