@@ -69,7 +69,6 @@ public class Main {
                 }
             }
 
-
             while (ansFlag == true) {//Check if the user entered only Y or N values
                 System.out.println("Would you like to continue converting more values?\nwrite Y or N");
                 ans = myObj.next();
