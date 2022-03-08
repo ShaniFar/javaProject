@@ -15,9 +15,9 @@ public class Main {
         boolean flag = true;
         double value;
         String input;
-        int type = 0;
+        int type ;
         double amount = 0.0;
-        boolean amountFlag = false;
+        boolean amountFlag;
         String ans;
         boolean ansFlag = true;
 
@@ -36,6 +36,7 @@ public class Main {
                     }
                 } catch (NumberFormatException e) {//Only INT entries can be entered
                     System.err.println("Enter only number");
+                    type = 0;
                 }
 
             } while (type != 1 && type != 2);
@@ -94,7 +95,7 @@ public class Main {
                     myWriter.close();
 
                 } else {//In case the user entered a value other than Y or N
-                    System.out.println("You can enter only Y or T");
+                    System.err.println("You can enter only Y or N");
                     flag = true;
                 }
             }
